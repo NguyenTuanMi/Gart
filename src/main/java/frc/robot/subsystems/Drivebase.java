@@ -9,15 +9,15 @@ import frc.robot.RobotContainer;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
 import static frc.robot.Constants.spin.*;
-import static frc.robot.Constants.spin.joystick.*;
-import static frc.robot.Constants.spin.ArrayConstant.*;
+import static frc.robot.Constants.joystick.*;
+import static frc.robot.Constants.ArrayConstant.*;
 //import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 public class Drivebase extends SubsystemBase { 
   /** Creates a new Drivebase. */
-  public Drivebase(int n) {
+  public Drivebase() {
     int [] x = {Rightmaster, Leftmaster, Rightfollow, Leftfollow};
-      for (int i = 1; i < n; i++ ) {
+      for (int i = 1; i < 4; i++ ) {
         wheel [i - 1] = new WPI_TalonSRX(x[i - 1]);
         wheel [i -1].setNeutralMode(NeutralMode.Brake);
   }

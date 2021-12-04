@@ -32,7 +32,7 @@ public class RobotContainer {
   public static final Joystick stic = new Joystick(1);
 
   //private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem);
-  public static Drivebase drive = new Drivebase(4);
+  public static Drivebase drive = new Drivebase();
   public static Shooter shot = new Shooter();
   public static Sucker suc = new Sucker();
   Command auto = new Autotask(drive, shot, suc);

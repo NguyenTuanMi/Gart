@@ -18,6 +18,7 @@ public final class Constants {
         public static final int Leftfollow = 2;
         public static final int Rightmaster = 3;
         public static final int Leftmaster = 4;
+    }
     public final static class joystick{
         public static final int stick = 1;
     }
@@ -29,17 +30,18 @@ public final class Constants {
         public static final int sucker = 1;
     }
     public static class ArrayConstant {
-        public static WPI_TalonSRX [] wheel = new WPI_TalonSRX[6];
+        public static WPI_TalonSRX [] wheel = new WPI_TalonSRX[9];
     }
     public static final class PID {
         public static final double kP = 1.0/180;
         public static final double kD = 1.0/180;
         public static final double kI = 1.0/180;
+        public static final double kStraightConstant = 2/3;
 
         public static final double kToleranceDegress =  2.0f;                    //  Sai số giới hạn
         public static final double kToleranceAngularVelocity =  0.08f;                    //  Sai số giới hạn
         
     }
 
-    }
+    
 }

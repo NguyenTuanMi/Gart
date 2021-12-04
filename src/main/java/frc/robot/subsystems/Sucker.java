@@ -6,8 +6,8 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
-import static frc.robot.Constants.spin.speed.*;
-import static frc.robot.Constants.spin.ArrayConstant.*;
+import static frc.robot.Constants.speed.*;
+import static frc.robot.Constants.ArrayConstant.*;
 
 public class Sucker extends SubsystemBase {
   

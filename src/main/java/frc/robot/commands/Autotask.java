@@ -18,7 +18,7 @@ public class Autotask extends ParallelCommandGroup {
     // Add your commands in the addCommands() call, e.g.
     // addCommands(new FooCommand(), new BarCommand());
     addCommands(
-      new DriveStraight(drive, 0.5),
+      //new DriveStraight(drive, 0.5),
       new Shooting(shoot, 0.7),
       new Sucking (suck)
     );
